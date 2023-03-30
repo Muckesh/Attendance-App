@@ -35,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        title: Text("R O L L   C A L L"),
+        title: Text(" Track N Check"),
         backgroundColor: Color(0xff0024F1),
       ),
       body: _screens[_selectedIndex],
