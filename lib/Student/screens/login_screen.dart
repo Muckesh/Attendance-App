@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:attendance/Student/Widgets/CustomTextField.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:attendance/auth.dart';
@@ -130,24 +131,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     const EdgeInsets.symmetric(vertical: 18.0, horizontal: 32),
                 child: Column(
                   children: [
-                    TextField(
+                    CustomTextField(
                       controller: _controllerEmail,
-                      decoration: InputDecoration(
-                        hintText: "Email",
-                        prefixIcon: Icon(Icons.email_outlined),
-                      ),
+                      icon: Icon(Icons.email_outlined),
+                      text: 'Email',
                     ),
                     SizedBox(
                       height: 10,
                     ),
-                    TextField(
-                      obscureText: true,
-                      controller: _controllerPassword,
-                      decoration: InputDecoration(
-                        hintText: "Password",
-                        prefixIcon: Icon(Icons.lock_outline),
-                      ),
-                    ),
+                    CustomTextField(
+                        controller: _controllerPassword,
+                        text: "Password",
+                        icon: Icon(Icons.lock_outline)),
                     SizedBox(
                       height: 10,
                     ),
