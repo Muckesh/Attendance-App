@@ -15,7 +15,8 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
           Text("Settings Screen"),
@@ -44,6 +45,28 @@ class SettingsScreen extends StatelessWidget {
               ),
             ),
           ),
+          // GestureDetector(
+          //   onTap: signOut,
+          //   child: Container(
+          //     // width: double.infinity,
+          //     alignment: Alignment.center,
+          //     height: 50,
+          //     decoration: BoxDecoration(
+          //       color: Color(0xff1A54F8),
+          //       borderRadius: BorderRadius.circular(10),
+          //     ),
+          //     child: Center(
+          //       child: Text(
+          //         "Sign Out",
+          //         style: TextStyle(
+          //           color: Color(0xffFBFBFC),
+          //           fontWeight: FontWeight.bold,
+          //           fontSize: 16,
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
